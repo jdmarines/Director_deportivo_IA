@@ -1,5 +1,6 @@
+# agents/qualitative_agent.py
+
 # --- INICIO DEL TRUCO PARA COMPATIBILIDAD CON SQLITE ---
-# Este bloque es necesario para que chromadb funcione en Streamlit Cloud.
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
