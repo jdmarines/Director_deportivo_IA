@@ -5,18 +5,18 @@ class QuantitativeAgent:
     Este agente se encarga de todo el análisis de datos estructurados (el CSV).
     Carga los datos una vez y proporciona métodos para consultarlos.
     """
-    def __init__(self, csv_path):
+    def __init__(self, data/stats.csv):
         """
         El constructor carga el dataset del CSV en un DataFrame de Pandas.
         """
         try:
-            print(f"Cargando dataset desde: {csv_path}")
-            self.df = pd.read_csv(csv_path)
+            print(f"Cargando dataset desde: {data/stats.csv}")
+            self.df = pd.read_csv(data/stats.csv)
             print("Dataset cargado exitosamente.")
             # Opcional: Mostrar las primeras filas para verificar
             # print(self.df.head())
         except FileNotFoundError:
-            print(f"Error: No se encontró el archivo en la ruta: {csv_path}")
+            print(f"Error: No se encontró el archivo en la ruta: {data/stats.csv}")
             self.df = None
 
     def get_player_stats(self, player_name: str) -> dict:
