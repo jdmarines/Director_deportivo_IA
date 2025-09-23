@@ -1,8 +1,9 @@
 streamlit
 pandas
 langchain
-langchain-community  # <-- La pieza clave que faltaba
+langchain-community
 langchain-google-genai
 chromadb
 sentence-transformers
 pypdf
+unstructured
